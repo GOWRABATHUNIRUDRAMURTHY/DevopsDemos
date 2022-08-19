@@ -46,11 +46,11 @@
    ```
 1. Create kubernetes cluster definitions on S3 bucket 
    ```sh 
-    kops create cluster --cloud=aws --zones=ap-southeast-1b --name=dev.k8s.valaxy.in --dns-zone=valaxy.in --dns private
-    ```
+    
+    ```kops create cluster --cloud=aws --zones=ap-south-1b --name=dev.k8s.prasanths.xyz --dns=prasanths.xyz --dns private
 1. Create kubernetes cluser
     ```sh 
-      kops update cluster dev.k8s.valaxy.in --yes
+      kops update cluster dev.k8s.prasanths.xyz --yes
      ```
 1. Validate your cluster 
      ```sh 
