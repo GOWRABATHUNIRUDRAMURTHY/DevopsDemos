@@ -25,22 +25,33 @@
    ```sh 
      aws configure
     ```
-1. Install kops on ubuntu instance:
+1. Install kops on ubuntu instance:    follow-  https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
    ```sh
- curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
 unzip awscliv2.zip
+
 sudo ./aws/install
+
 ---------------------------
 or
 --------------------------------------------------------------------------------
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
 unzip awscliv2.zip
+
 sudo ./aws/install
+
 ./aws/install -i /usr/local/aws-cli -b /usr/local/bin
+
 sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+
 which aws
+
 ls -l /usr/local/bin/aws
+
 aws --version
+
 ----------------------------------------------------------------
     ```
 1. Create a Route53 private hosted zone (you can create Public hosted zone if you have a domain)
