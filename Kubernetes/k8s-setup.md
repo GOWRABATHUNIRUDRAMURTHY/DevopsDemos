@@ -100,5 +100,5 @@ aws --version
     ```
  1. To delete cluster
     ```sh
-     kops delete cluster dev.k8s.valaxy.in --yes
+     kops delete cluster dev.k8s.prasanths.xyz --yes
     ```
